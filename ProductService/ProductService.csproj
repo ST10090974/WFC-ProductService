@@ -62,16 +62,25 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ServiceProduct.svc" />
+    <Content Include="ServiceSupplier.svc" />
+    <Content Include="SupplierService.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Data\ProductDB.cs" />
     <Compile Include="IServiceProduct.cs" />
+    <Compile Include="IServiceSupplier.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Supplier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceProduct.svc.cs">
       <DependentUpon>ServiceProduct.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceSupplier.svc.cs">
+      <DependentUpon>ServiceSupplier.svc</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierService.svc.cs">
+      <DependentUpon>SupplierService.svc</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
